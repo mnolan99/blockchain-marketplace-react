@@ -1,0 +1,45 @@
+@import "~antd/dist/antd.css";
+
+.ant-page-header {
+  background-color: #131921;
+}
+
+.searchBar {
+  width: calc(100vw - 550px);
+}
+.ant-input {
+  border-radius: 10px 0 0 10px !important;
+}
+
+.ant-input-search-button,
+.ant-input-search-button:focus {
+  background-color: #111111;
+  border-color: #111111;
+  border-radius: 0 10px 10px 0 !important;
+}
+
+.ant-input-search-button:hover {
+  background-color: #58585f;
+  border-color: #58585f;
+  cursor: pointer;
+}
+
+.login-btn,
+.login-btn:focus {
+  padding: 3px 30px;
+  margin-left: 50px;
+  background-color: #111111;
+  border-color: #111111;
+  border-radius: 10px;
+  vertical-align: top;
+}
+
+.login-btn:hover {
+  background-color: #58585f;
+  border-color: #58585f;
+  cursor: pointer;
+}
+
+body {
+  background-color: #fcfcfc;
+}

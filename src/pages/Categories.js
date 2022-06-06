@@ -1,21 +1,50 @@
 import React from "react";
 import "./Homepage.css";
-import { useNavigate } from "react-router-dom";
-import { Button } from "antd";
+import { Button, Layout } from "antd";
+import Header from "../functionComponents/Header";
+import Footer from "../functionComponents/Footer";
 
 const Categories = () => {
-  const navigate = useNavigate();
+  const { Sider, Content } = Layout;
+
   return (
     <>
-      <h1>Categories</h1>
-      <Button
-        className=""
-        key="1"
-        type="primary"
-        onClick={() => navigate("/Homepage")}
-      >
-        <span>Homepage</span>
-      </Button>
+      <Header />
+
+      <Layout>
+        <Sider
+          width="300px"
+          theme="light"
+          style={{
+            padding: "25px",
+            backgroundColor: "#fcfcfc",
+            borderRight: "10px solid black",
+          }}
+        >
+          <h1>Categories</h1>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+          </div>
+        </Sider>
+
+        <Content>
+          <h1>Content Here</h1>
+        </Content>
+      </Layout>
+
+      <Footer />
     </>
   );
 };

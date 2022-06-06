@@ -1,0 +1,18 @@
+.header {
+  border-bottom: 5px solid black;
+  background-color: #fcfcfc;
+}
+
+.appName {
+  height: 80px;
+  margin-right: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.ant-input-search-button {
+  border-radius: 50px;
+}
