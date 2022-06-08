@@ -5,6 +5,7 @@ import Categories from "./pages/Categories";
 import ProductDetails from "./pages/ProductDetails";
 import "./App.css";
 
+
 const App = () => (
   <Routes>
     <Route path="/" element={<Homepage />} />

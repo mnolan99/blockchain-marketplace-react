@@ -1,4 +1,6 @@
 @import "~antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Slab:wght@300&display=swap");
 
 .ant-page-header {
   background-color: #131921;
@@ -42,4 +44,10 @@
 
 body {
   background-color: #fcfcfc;
+}
+
+html,
+body {
+  overflow-y: scroll;
+  position: relative;
 }

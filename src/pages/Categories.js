@@ -36,6 +36,20 @@ const Categories = () => {
             <Button className="">Apply Filters</Button>
             <Button className="">Apply Filters</Button>
             <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
+            <Button className="">Apply Filters</Button>
           </div>
         </Sider>
 
