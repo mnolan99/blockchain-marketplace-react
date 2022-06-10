@@ -48,8 +48,9 @@
 }
 
 .link:hover {
-  color: #58585f;
-  text-decoration: underline;
+  cursor: pointer;
+  color: #afafc3;
+  text-decoration: none;
 }
 
 .cardText {
@@ -58,7 +59,49 @@
   margin: 30%;
 }
 
-.link {
+.link.ant-btn {
   text-align: center;
-  display: block;
+  color: black;
+  font-family: "Montserrat";
+  padding: 6px 30px;
+  background-color: #111111;
+  border-color: #111111;
+  color: white;
+  border-radius: 10px;
+}
+
+.shop-link {
+  padding: 6px 30px;
+  background-color: #111111;
+  border-color: #111111;
+  color: white;
+  font-family: "Montserrat";
+  border-radius: 10px;
+  vertical-align: top;
+  margin-left: 175px;
+}
+
+.shop-link:hover,
+link:hover {
+  background-color: #58585f;
+  border-color: #58585f;
+  cursor: pointer;
+  color: white;
+}
+
+.cat-header {
+  border-bottom: 2px solid #3f3f42;
+  font-size: 16px;
+  padding: 10px 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.category {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Montserrat";
 }

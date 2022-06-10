@@ -1,33 +1,35 @@
+/* Imports for antd components and font styles from Google Fonts */
 @import "~antd/dist/antd.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Slab:wght@300&display=swap");
 
+/* Multiple css selectors that are used throughout the application */
 .ant-page-header {
   background-color: #131921;
 }
 
-.searchBar {
+.searchBar.ant-input-group-wrapper {
   width: calc(100vw - 550px);
 }
 .ant-input {
   border-radius: 10px 0 0 10px !important;
 }
 
-.ant-input-search-button,
-.ant-input-search-button:focus {
+.ant-input-search-button.ant-btn-primary,
+.ant-input-search-button.ant-btn-primary:focus {
   background-color: #111111;
   border-color: #111111;
   border-radius: 0 10px 10px 0 !important;
 }
 
-.ant-input-search-button:hover {
+.ant-input-search-button.ant-btn-primary:hover {
   background-color: #58585f;
   border-color: #58585f;
   cursor: pointer;
 }
 
-.login-btn,
-.login-btn:focus {
+.login-btn.ant-btn-primary,
+.login-btn.ant-btn-primary:focus {
   padding: 3px 30px;
   margin-left: 50px;
   background-color: #111111;
@@ -36,7 +38,7 @@
   vertical-align: top;
 }
 
-.login-btn:hover {
+.login-btn.ant-btn-primary:hover {
   background-color: #58585f;
   border-color: #58585f;
   cursor: pointer;

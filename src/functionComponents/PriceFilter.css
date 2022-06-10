@@ -1,0 +1,17 @@
+.amount {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.amount:hover {
+  cursor: pointer;
+  color: #afafc3;
+}
+
+h3 {
+  font-family: 'Montserrat", sans-serif';
+}
+
+p {
+  font-family: 'Montserrat", sans-serif';
+}

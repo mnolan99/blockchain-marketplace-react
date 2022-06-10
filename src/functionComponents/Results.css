@@ -1,0 +1,28 @@
+.productName {
+  font-size: 24px;
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Roboto Slab", serif;
+}
+
+.link {
+  text-align: center;
+  color: black;
+  font-family: "Montserrat";
+  padding: 6px 30px;
+  background-color: #111111;
+  border-color: #111111;
+  color: white;
+  border-radius: 10px;
+  margin-left: 1px;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: #afafc3;
+  text-decoration: none;
+}

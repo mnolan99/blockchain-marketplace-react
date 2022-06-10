@@ -1,9 +1,9 @@
 // Import photos from assets file so that they can be used in the products dictionary
 import MacbookAir2020 from "./assets/Products/2020-Macbook-Air.jpg";
 import Macbookpro2021 from "./assets/Products/2021-Macbook-Pro.jpg";
-import AsusChromebook from "./assets/Products/AsusChromebook.jpg";
-import AsusExpertbook from "./assets/Products/ExpertBook.jpg";
-import LenovoIdeaPad from "./assets/Products/Lenovo-Ideapad.jpg.jpg";
+import AsusChromebook from "./assets/Products/ASUS-Chromebook.jpg";
+import AsusExpertbook from "./assets/Products/ASUS-Expert.jpg";
+import LenovoIdeaPad from "./assets/Products/Lenovo-Ideapad.jpg";
 import AirpodsPro from "./assets/Products/AirpodsPro-2021.jpg";
 import SonyMDR from "./assets/Products/SonyMDR-ZX110-Headphones.jpg";
 import SonyWH from "./assets/Products/SonyWH-CH5-Headphones.jpg";
@@ -15,13 +15,14 @@ import HolureTee from "./assets/Products/HolureTee.jpg";
 import TCAShorts from "./assets/Products/TCAShorts.jpg";
 import LixadaShorts from "./assets/Products/LixadaShorts.jpg";
 import UnderArmourRaidShorts from "./assets/Products/UnderArmourRaidShorts.jpg";
-import UnderArmourPerfShorts from "./assets/Products/UnderArmourPerfShorts.jpg";
+import UnderArmourPerfShorts from "./assets/Products/UAPerfShorts.jpg";
 import NikeDryShorts from "./assets/Products/NikesShorts.jpg";
 import LeviHighJeans from "./assets/Products/Levi724Jeans.jpg";
 import LeeJeans from "./assets/Products/LeeJeans.jpg";
 import LeviMileJeans from "./assets/Products/LeviMileJeans.jpg";
 import PepeJeans from "./assets/Products/PepeJeans.jpg";
 
+// Dictionary for all available products, showing the products name, price, rating, and description.
 export const products = {
   Laptops: [
     {
@@ -92,7 +93,7 @@ export const products = {
     },
     {
       name: "Beats Solo3 Wireless On-Ear Headphones",
-      price: 159.0,
+      price: 159.99,
       rating: 5,
       image: BeatsSolo3,
       about:
@@ -102,15 +103,15 @@ export const products = {
   Tops: [
     {
       name: "New Balance Classic Arch Tee",
-      price: 17.5,
-      rating: 4,
+      price: 17.49,
+      rating: 5,
       image: NewBalanceTee,
       about:
         "Cotton/polyester jersey fabric for comfort. Athletic fit built to skim your chest, waist and hip — perfect for active movement with a fit that's not too tight. Cotton Jersey. Fastening: No Closure",
     },
     {
       name: "Nike Men's M Nk Dry Park Vii Jsy Ss T-shirt",
-      price: 15.5,
+      price: 15.49,
       rating: 3,
       image: NikeMensTshirt,
       about:
@@ -160,7 +161,7 @@ export const products = {
     },
     {
       name: "Under Armour Men's Qualifier Wg Perf Short 5in Short",
-      price: 23.5,
+      price: 23.49,
       rating: 4,
       image: UnderArmourPerfShorts,
       about:
@@ -168,17 +169,17 @@ export const products = {
     },
     {
       name: "NIKE Men's M Nk Dry Park Iii Short Nb K Sport Shorts",
-      price: 23.5,
+      price: 23.49,
       rating: 4,
       image: NikeDryShorts,
       about:
         "Contrast mesh panel on both sides. Nike Dry fabric. 100% Polyester. Machine Wash. Fastening: Pull On",
     },
   ],
-  Trousers: [
+  Jeans: [
     {
       name: "Levi's Women's 724 High Rise Straight to The Nine Jeans",
-      price: 51.5,
+      price: 51.49,
       rating: 4,
       image: LeviHighJeans,
       about:

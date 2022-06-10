@@ -16,3 +16,21 @@ body {
 .ant-input-search-button {
   border-radius: 50px;
 }
+
+.subheader {
+  background-color: #fcfcfc;
+  color: black;
+  font-weight: 400;
+  padding: 5px 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.categories {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.categories:hover {
+  cursor: pointer;
+  color: #afafc3;
+}

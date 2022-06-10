@@ -1,11 +1,12 @@
+// Imports
+import "./App.css";
 import React from "react";
-import { Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Categories from "./pages/Categories";
+import { Routes, Route } from "react-router-dom";
 import ProductDetails from "./pages/ProductDetails";
-import "./App.css";
 
-
+// Use react-router to link to multiple pages using one specified path
 const App = () => (
   <Routes>
     <Route path="/" element={<Homepage />} />
