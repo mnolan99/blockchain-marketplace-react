@@ -13,11 +13,11 @@
 
 ## Installation
 
-1. Download Metamask chrome extenstionfrom the ([Chrome Web Store ](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en))
+1. Download Metamask chrome extenstion from the ([Chrome Web Store ](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en))
 2. Create a Moralis account and set up a test server on Metamask chrome extenstionfrom the ([Moralis.io](Moralis.io))
 3. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git](https://github.com/mnolan99/blockchain-marketplace-react.git
+   git clone https://github.com/mnolan99/blockchain-marketplace-react.git
    ```
 4. Install Dependencies
    ```sh
