@@ -77,15 +77,6 @@ const Categories = () => {
             backgroundColor: "#fcfcfc",
           }}
         >
-          <h1
-            style={{
-              fontSize: "28px",
-              fontFamily: "Montserrat",
-            }}
-          >
-            Results
-          </h1>
-
           {/* Display the results component which returns the results of the users 
               requested filters (rating, category, and price) */}
           <Results
