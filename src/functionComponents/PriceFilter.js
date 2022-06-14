@@ -13,32 +13,32 @@ function PriceFilter({ priceMin, setPriceMin, priceMax, setPriceMax }) {
   return (
     <>
       {/* Display each of the price ranges and run changePrice 
-      function to reflect the chosen filter */}
+      f   unction to reflect the chosen filter */}
       <h3>Price</h3>
       <p className="amount" onClick={() => filterPrice(0, 50)}>
-        Under £50
+        Under $50
       </p>
       <p className="amount" onClick={() => filterPrice(50, 100)}>
-        £50 to £100
+        $50 to $100
       </p>
       <p className="amount" onClick={() => filterPrice(100, 200)}>
-        £100 to £200
+        $100 to $200
       </p>
       <p className="amount" onClick={() => filterPrice(200, 1000)}>
-        £200+
+        $200+
       </p>
 
       {/* Allow the user to enter specific values to filter 
-      the products by a specific price */}
+          the products by a specific price */}
       <Space>
         <InputNumber
           value={priceMin}
-          formatter={(value) => `£ ${value}`}
+          formatter={(value) => `$ ${value}`}
           onChange={(value) => filterPrice(value, priceMax)}
         />
         <InputNumber
           value={priceMax}
-          formatter={(value) => `£ ${value}`}
+          formatter={(value) => `$ ${value}`}
           onChange={(value) => filterPrice(priceMin, value)}
         />
       </Space>

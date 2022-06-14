@@ -4,12 +4,12 @@
 
 ## Dependencies
 
-- npm install antd
-- npm install moralis
-- npm install react
-- npm install react-dom
-- npm install react-moralis
-- npm install react-router-dom
+- npm install antd - 4.18.7
+- npm install moralis - 1.3.2
+- npm install react - 18.1.0
+- npm install react-dom - 18.1.0
+- npm install react-moralis 1.3.1
+- npm install react-router-dom - 6.3.0
 
 ## Installation
 

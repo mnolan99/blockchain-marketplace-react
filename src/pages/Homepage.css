@@ -53,12 +53,6 @@
   text-decoration: none;
 }
 
-.cardText {
-  text-align: center;
-  font-size: 14px;
-  margin: 30%;
-}
-
 .link.ant-btn {
   text-align: center;
   color: black;
@@ -68,6 +62,12 @@
   border-color: #111111;
   color: white;
   border-radius: 10px;
+}
+
+.cardText {
+  text-align: center;
+  font-size: 14px;
+  margin: 30%;
 }
 
 .shop-link {

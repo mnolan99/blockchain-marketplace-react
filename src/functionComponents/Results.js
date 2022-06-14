@@ -12,6 +12,7 @@ function Results({ category, rating, priceMin, priceMax }) {
     .filter((x) => x.price > priceMin)
     .filter((x) => x.price <= priceMax);
 
+  // Get the value for the number of products matching the user's filter request
   const numProducts = cat.length;
   return (
     <>
@@ -51,7 +52,7 @@ function Results({ category, rating, priceMin, priceMax }) {
                 <div style={{ display: "block", paddingLeft: "30px" }}>
                   <p className="productName">{chosenCat.name}</p>
                   <Rate value={chosenCat.rating} disabled={true}></Rate>
-                  <h2> £{chosenCat.price}</h2>
+                  <h2> ${chosenCat.price}</h2>
                   <p>{chosenCat.about}</p>
                   <Link to="/productDetails" state={chosenCat} className="link">
                     View Product

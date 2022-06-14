@@ -7,7 +7,6 @@ import LenovoIdeaPad from "./assets/Products/Lenovo-Ideapad.jpg";
 import AirpodsPro from "./assets/Products/AirpodsPro-2021.jpg";
 import SonyMDR from "./assets/Products/SonyMDR-ZX110-Headphones.jpg";
 import SonyWH from "./assets/Products/SonyWH-CH5-Headphones.jpg";
-import BeatsSolo3 from "./assets/Products/BeatsSoloHeadphones.jpg";
 import NewBalanceTee from "./assets/Products/NewBalanceClassicTee.jpg";
 import NikeMensTshirt from "./assets/Products/NikeMensTee.jpg";
 import UnderArmourSport from "./assets/Products/MensUASportStyleTee.jpg";
@@ -21,6 +20,9 @@ import LeviHighJeans from "./assets/Products/Levi724Jeans.jpg";
 import LeeJeans from "./assets/Products/LeeJeans.jpg";
 import LeviMileJeans from "./assets/Products/LeviMileJeans.jpg";
 import PepeJeans from "./assets/Products/PepeJeans.jpg";
+import BetronHeadphones from "./assets/Products/BetronHeadphones.jpg";
+import SamsungHeadphones from "./assets/Products/SamsungHeadphones.jpg";
+import PureHeadphones from "./assets/Products/PureHeadphones.jpg";
 
 // Dictionary for all available products, showing the products name, price, rating, and description.
 export const products = {
@@ -92,12 +94,28 @@ export const products = {
         "Up to 35 hours long battery life. 10 minutes Quick Charge for 90 minutes playback. Sleek, swivel fold design for compact on-ear style. Built-in microphone, enabling hands free voice calls",
     },
     {
-      name: "Beats Solo3 Wireless On-Ear Headphones",
-      price: 159.99,
-      rating: 5,
-      image: BeatsSolo3,
+      name: "Betron ProX7 Earphones, In Ear Headphones with Mic and Volume Control, Dual Driver Quality Headset, Black",
+      price: 1.99,
+      rating: 2,
+      image: BetronHeadphones,
       about:
-        "High-performance wireless Bluetooth headphones in rose gold. Features the Apple W1 chip and Class 1 wireless Bluetooth connectivity. With up to 40 hours of battery life, Beats Solo3 wireless is your perfect everyday headphone. Compatible with iOS and Android devices. With Fast Fuel, 5 minutes of charging gives you 3 hours of playback when battery is low",
+        "Complete with a dynamic dual driver system unlike standard headphones, these noise isolating headphones are designed to provide HD stereo and bass sound, whether working out or simply relaxing at home. Complete with a selection of different-sized earbuds, you can select the most compatible fit for your ear shape. Ensuring optimum comfort all day long, you ll never have to worry about these headphones feeling painful or uncomfortable. Featuring an innovative tangle-free design, the Y-shaped cord of these headphones has been carefully crafted to remain smooth and hassle-free; allowing you to go about your day without wasting time untangling wires.",
+    },
+    {
+      name: "Samsung EHS64 3.5 mm Earphones with Remote - White",
+      price: 0.99,
+      rating: 3,
+      image: SamsungHeadphones,
+      about:
+        "Genuine Samsung accessory. In-Line Mic with Remote Function. Call Answer/End Button. Stereo Sound. Soft Ear-Gels help isolating noise",
+    },
+    {
+      name: "JVC Gumy In-Ear Wired Headphones Earphones Compatible with iPod, iPhone, Samsung - White",
+      price: 1.49,
+      rating: 1,
+      image: PureHeadphones,
+      about:
+        "Powerful sound with 13.5mm neodymium driver unit. Oval form soft rubber body for comfortable fit. 1m colour cord with nickel-plated iPhone compatible slim plug. Available in eight vivid colours. Environmentally-friendly package made of 75% recycled plastic from post-consumer waste",
     },
   ],
   Tops: [

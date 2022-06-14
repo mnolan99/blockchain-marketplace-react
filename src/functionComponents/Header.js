@@ -1,11 +1,12 @@
 // Imports
 import "./Header.css";
 import "antd/dist/antd.min.css";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useMoralis } from "react-moralis";
 import AppName from "../assets/appName.png";
 import { MenuOutlined } from "@ant-design/icons";
-import { Layout, Space, Input, Button } from "antd";
+import { Layout, Space, Input, Button, Modal } from "antd";
 
 // Array of categories to be displayed in subheader
 const categories = ["Laptops", "Headphones", "Tops", "Shorts", "Jeans"];
@@ -15,8 +16,10 @@ const Header = () => {
   // Deconstruct the imports
   const { Header } = Layout;
   const { Search } = Input;
+
   // Authenticate the users login using Metamask with Moralis
   const { authenticate, account } = useMoralis();
+  const [isModalVisibleSearch, setIsModalVisibleSearch] = useState(false);
 
   return (
     <div className="header">
@@ -33,6 +36,7 @@ const Header = () => {
               placeholder="Search for a product ..."
               enterButton
               className="searchBar"
+              onSearch={() => setIsModalVisibleSearch(true)}
             />
           </Space>
 
@@ -65,7 +69,7 @@ const Header = () => {
             </Space>
 
             {/* Return a new array with all categories, link to the categories page, and 
-            update the state to reflect the chosen category */}
+                update the state to reflect the chosen category */}
             {categories.map((chosenCat) => {
               return (
                 <Link to="/categories" state={chosenCat} className="categories">
@@ -76,6 +80,24 @@ const Header = () => {
           </Space>
         </div>
       </Layout>
+
+      {/* Pop-up modal to display information about the search bar.
+          This lets the user know that the search function doesn't currently work */}
+      <Modal
+        title="Search Query"
+        visible={isModalVisibleSearch}
+        onOk={() => setIsModalVisibleSearch(false)}
+        onCancel={() => setIsModalVisibleSearch(false)}
+      >
+        <div style={{ display: "flex" }}>
+          <div>
+            <h2>Search</h2>
+            <h>
+              Unfortunately it is not currently possible to search for products.
+            </h>
+          </div>
+        </div>
+      </Modal>
     </div>
   );
 };

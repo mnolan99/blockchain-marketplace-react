@@ -1,0 +1,27 @@
+.link.ant-btn:hover {
+  cursor: pointer;
+  color: #afafc3;
+  text-decoration: none;
+}
+
+.link.ant-btn {
+  text-align: center;
+  color: black;
+  font-family: "Montserrat";
+  padding: 6px 30px;
+  background-color: #111111;
+  border-color: #111111;
+  color: white;
+  border-radius: 10px;
+  margin-left: 83px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.deliveryAddress.ant-input {
+  border-radius: 10px !important;
+}

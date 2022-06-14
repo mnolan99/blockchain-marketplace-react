@@ -54,7 +54,7 @@ const Homepage = () => {
                 <p style={{ fontWeight: "bold", marginBottom: 0 }}>
                   Apple MacBook Pro Laptop 2021
                 </p>
-                <p style={{ marginBottom: 0 }}>£999.99</p>
+                <p style={{ marginBottom: 0 }}>$999.99</p>
                 <p style={{ marginBottom: 10 }}>Available Now</p>
               </span>
               <Link
@@ -85,7 +85,7 @@ const Homepage = () => {
                     <p style={{ fontWeight: "bold", marginBottom: 0 }}>
                       Under Armour Men's Sportstyle Top
                     </p>
-                    <p style={{ marginBottom: 0 }}>£11.99</p>
+                    <p style={{ marginBottom: 0 }}>$11.99</p>
                     <p style={{ marginBottom: 10 }}>Available Now</p>
                   </span>
                   <Link
@@ -110,8 +110,8 @@ const Homepage = () => {
                     <p style={{ fontWeight: "bold", marginBottom: 0 }}>
                       Under Armour Raid 8 Men's Sports Shorts
                     </p>
-                    <p style={{ marginBottom: 0 }}>£28.99</p>
-                    <p style={{ marginBottom: 10 }}>Out of Stock</p>
+                    <p style={{ marginBottom: 0 }}>$28.99</p>
+                    <p style={{ marginBottom: 10 }}>Available Now</p>
                   </span>
                   <Link
                     to="/categories"
