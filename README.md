@@ -1,4 +1,4 @@
-# BlockShop - Masters Project
+# BlockShop - Masters Project - Moralis
 
 ### A Web3 blockchain marketplace test application that allows users to purchase items using test cryptocurrency on the Polygon Testnet through Metamask.
 
@@ -35,6 +35,7 @@
 ## Built With
 
 - [React.js](https://reactjs.org/)
+- [Moralis API](https://docs.moralis.io/introduction/readme)
 
 ## Contact
 
