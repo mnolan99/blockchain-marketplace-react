@@ -1,7 +1,7 @@
 // Imports
 import "./Purchase.css";
 import { useState } from "react";
-import { useMoralis } from "react-moralis";
+import { useMoralis, useMoralisWeb3Api } from "react-moralis";
 import { Button, Modal, Input } from "antd";
 
 // Component that returns the JSX code to display the information relating to the purchase
@@ -12,8 +12,14 @@ function Purchase({ product }) {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [delivery, setDelivery] = useState("");
   const { Moralis, account, chainId } = useMoralis();
+  const Web3Api = useMoralisWeb3Api();
 
   const handleOk = async () => {
+    // Get  time when confirm button clicked
+    var today = new Date().toUTCString();
+    // Get only the time from the date function
+    const formattedButtonClick = today.substr(17, 8);
+
     // Get the current price and conversion rate of Matic using the Matic address available on etherscan.io
     // (https://etherscan.io/token/0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0) and the Moralis API.
     const maticDetails = {
@@ -34,7 +40,8 @@ function Purchase({ product }) {
       amount: Moralis.Units.ETH(priceMatic),
       receiver: "0x404541effdB6F481805B63bb8b451B5b457F1E64",
     };
-    await Moralis.transfer(transactionDetails);
+    let result = await Moralis.transfer(transactionDetails);
+    const hashNumber = result.hash;
 
     // Update the Moralis database with the transaction details. Store the buyer's
     // wallet address, and delivery address, along with the product purchased, and the amount.
@@ -46,6 +53,47 @@ function Purchase({ product }) {
     transactionReceipt.set("Price", product.price);
     transactionReceipt.save();
     setIsModalVisible(false);
+
+    // Get the transaction details from the blockchain, searching by hash number
+    const fetchTransaction = async () => {
+      const options = {
+        chain: "mumbai",
+        transaction_hash: hashNumber,
+      };
+
+      // Store transaction details
+      const transaction = await Web3Api.native.getTransaction(options);
+      const detailsArray = [];
+      const blockNumber = transaction.block_number;
+      const blockHash = transaction.block_hash;
+      const fromAddress = transaction.from_address;
+      const toAddress = transaction.to_address;
+      const blockTimestamp = transaction.block_timestamp;
+      const formattedBlockTimestamp = blockTimestamp.substr(11, 8);
+
+      // Add transaction details to details array
+      detailsArray.push(
+        formattedButtonClick,
+        blockNumber,
+        blockHash,
+        fromAddress,
+        toAddress,
+        formattedBlockTimestamp
+      );
+
+      // Write transaction details to a txt document and prompt this to be downloaded in the browser
+      // This is used for testing and to gather data for conducting the study
+      var hiddenElement = document.createElement("a");
+      hiddenElement.href = "data:attachment/text," + encodeURI(detailsArray);
+      hiddenElement.target = "_blank";
+      hiddenElement.download = "transactionDetailsMoralis.txt";
+      hiddenElement.click();
+    };
+
+    // Run the fetchTransaction function after 40 seconds.
+    // This timeout allows enough time for the transaction
+    // to be processed on the blockchain before fetching the details
+    setTimeout(fetchTransaction, 40000);
   };
 
   return (
