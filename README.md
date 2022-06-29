@@ -2,6 +2,7 @@
 
 ### A Web3 blockchain marketplace test application that allows users to purchase items using test cryptocurrency on the Polygon Testnet through Metamask.
 
+## View Demo - [BlockShop Demo on YouTube](https://youtu.be/6TLR_aCEON0)
 ## Dependencies
 
 - npm install antd - 4.18.7
@@ -13,7 +14,7 @@
 
 ## Installation
 
-1. Download Metamask chrome extension from the ([Chrome Web Store ](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en))
+1. Download Metamask chrome extension from the ([Chrome Web Store](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en))
 2. Create a Moralis account and set up a test server on Metamask chrome extension from the ([Moralis.io](Moralis.io))
 3. Clone the repo
    ```sh
