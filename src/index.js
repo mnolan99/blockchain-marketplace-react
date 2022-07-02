@@ -11,8 +11,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <MoralisProvider
-      appId="---" // Moralis App ID
-      serverUrl="---" // Moralis Server ID
+      appId="hEIrAraKJgSkdc8wurvlRTvzjdKbK3oB4dGsWgNj" // Moralis App ID
+      serverUrl="https://2tnhe1cir5ax.usemoralis.com:2053/server" // Moralis Server ID
     >
       <BrowserRouter>
         <App />
